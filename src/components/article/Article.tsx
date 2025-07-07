@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 
 // Сообщаем вебпаку, что этот файл использует это изображение.
@@ -6,7 +7,7 @@ import { Text } from 'src/ui/text';
 
 import styles from './Article.module.scss';
 
-export const Article = () => {
+export const Article: React.FC = () => {
 	return (
 		<article className={clsx(styles.article)}>
 			<Text as='h1' size={45} weight={800} uppercase dynamicLite>
